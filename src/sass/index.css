@@ -29,4 +29,27 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.container {
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }/*# sourceMappingURL=index.css.map */
