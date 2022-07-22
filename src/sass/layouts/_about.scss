@@ -1,0 +1,29 @@
+.container {
+  @media screen and (max-width: 767px) {
+    padding: 60px 20px 40px;
+  }
+}
+.about-label {
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(21 / 18);
+  text-align: center;
+  text-transform: uppercase;
+  color: $second-title-color;
+}
+.about-title {
+}
+.about-picture {
+}
+.about-description {
+  &__pre-text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(19 / 12);
+    color: $first-text-color;
+  }
+}
+
+.about-description__post-text {
+}
