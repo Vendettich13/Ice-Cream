@@ -4,10 +4,24 @@
   @media screen and (max-width: 767px) {
     padding-bottom: 40px;
   }
+
+  @include desktop {
+    background-image: url(../images/about/about-desk-2-1x.webp);
+    @include retina {
+      background-image: url(../images/about/about-desk-2-2x.webp);
+    }
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
 }
-.tab-cont {
-  @include tablet {
+.about-cont {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding: 0 32px;
+  }
+
+  @include desktop {
+    padding: 0 16px;
   }
 }
 .tab-direction {
@@ -18,16 +32,20 @@
 .about-label {
   margin-bottom: 15px;
 
-  @include tablet {
-    margin-bottom: 16px;
-  }
-
   font-family: 'Titan One';
   font-weight: 400;
   font-size: 18px;
 
   @include tablet {
+    margin-bottom: 16px;
     font-size: 26px;
+    line-height: calc(30 / 26);
+  }
+
+  @include desktop {
+    font-size: 30px;
+    letter-spacing: 0.04em;
+    line-height: calc(34 / 30);
   }
 
   line-height: calc(21 / 18);
@@ -40,15 +58,20 @@
 
   @include tablet {
     margin-bottom: 40px;
+    font-size: 48px;
+    line-height: calc(55 / 48);
+  }
+
+  @include desktop {
+    margin-bottom: 60px;
+    font-size: 58px;
+    line-height: calc(66 / 58);
+    letter-spacing: 0.06em;
   }
 
   font-family: 'Titan One';
   font-weight: 400;
   font-size: 34px;
-
-  @include tablet {
-    font-size: 48px;
-  }
 
   line-height: calc(39 / 34);
   text-align: center;
@@ -60,6 +83,11 @@
   @include tablet {
     width: 336px;
     margin-right: 32px;
+  }
+
+  @include desktop {
+    width: 500px;
+    margin-right: 100px;
   }
 
   display: block;
@@ -80,10 +108,7 @@
     }
   }
   @include desktop {
-    background-image: url(../images/about/about-desk-2-1x.webp);
-    @include retina {
-      background-image: url(../images/about/about-desk-2-2x.webp);
-    }
+    padding-top: 90px;
   }
 
   &__pre-text {
@@ -93,6 +118,15 @@
       width: 334px;
       font-size: 14px;
       line-height: calc(25 / 14);
+    }
+
+    @include desktop {
+      width: 463px;
+      margin-bottom: 32px;
+
+      font-size: 16px;
+      line-height: calc(28 / 16);
+      letter-spacing: 0.04em;
     }
 
     margin-bottom: 40px;
@@ -111,6 +145,15 @@
       margin-bottom: 40px;
       font-size: 14px;
       line-height: calc(19 / 12);
+      letter-spacing: 0.04em;
+    }
+
+    @include desktop {
+      width: 463px;
+      margin-bottom: 40px;
+
+      font-size: 14px;
+      line-height: calc(27 / 14);
       letter-spacing: 0.04em;
     }
 
@@ -140,7 +183,18 @@
 
   border: none;
   padding: 0;
+
+  &:hover,
+  &:focus {
+    color: $second-text-color;
+    background-color: $first-title-color;
+  }
 }
 .arrow-btn {
   margin-left: 13px;
+
+  .about-button:hover &,
+  .about-button:focus & {
+    fill: green;
+  }
 }
