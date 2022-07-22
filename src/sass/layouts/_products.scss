@@ -103,7 +103,7 @@
         letter-spacing: 0.04em;
         text-transform: uppercase;
         color: #FFFFFF;
-        padding-bottom: 32px
+        margin-bottom: 32px
     }
 
     &__dot {
@@ -119,7 +119,8 @@
 
     &__description {
         width: 100%;
-        padding: 32px 40px;
+        padding: 0 40px;
+        margin: 32 0;
         font-family: 'DM Sans';
         font-style: normal;
         font-weight: 700;
