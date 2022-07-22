@@ -4,6 +4,9 @@
 .about-label {
   margin-bottom: 15px;
 
+  @include tablet {
+  }
+
   font-family: 'Titan One';
   font-weight: 400;
   font-size: 18px;
