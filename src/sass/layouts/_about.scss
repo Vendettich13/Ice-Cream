@@ -1,6 +1,9 @@
-.container {
+.about {
+  padding-bottom: 40px;
 }
 .about-label {
+  margin-bottom: 15px;
+
   font-family: 'Titan One';
   font-weight: 400;
   font-size: 18px;
@@ -10,17 +13,56 @@
   color: $second-title-color;
 }
 .about-title {
+  margin-bottom: 32px;
+
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 34px;
+  line-height: calc(39 / 34);
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $first-title-color;
 }
 .about-picture {
+  display: block;
+  margin-bottom: 40px;
 }
 .about-description {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @include mobile {
+    background-image: url(../images/about/about-2-1x.webp);
+    @include retina {
+      background-image: url(../images/about/about-2-2x.webp);
+    }
+  }
+  @include desktop {
+    background-image: url(../images/about/about-desk-2-1x.webp);
+    @include retina {
+      background-image: url(../images/about/about-desk-2-2x.webp);
+    }
+  }
+
   &__pre-text {
+    width: 220px;
+    margin-bottom: 40px;
+
     font-weight: 500;
     font-size: 12px;
     line-height: calc(19 / 12);
     color: $first-text-color;
   }
-}
 
-.about-description__post-text {
+  &__post-text {
+    width: 220px;
+    margin-bottom: 20px;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(19 / 12);
+    color: #907e82;
+  }
 }
