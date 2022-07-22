@@ -1,5 +1,6 @@
 .btn {
     display: flex;
+    justify-content: center;
     align-items: center;
     text-align: center;
     margin: 0 auto;
@@ -10,7 +11,7 @@
     color: #D41443;
     background-color: #ffffff;
     border-radius: 22px;
-    padding: auto;
+    padding: 2% 6%;
     min-width: 210px;
     border: none;
     
@@ -18,7 +19,7 @@
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
-    &:hover,
-    &:focus {
+    .btn:hover,
+    .btn:focus {
     background-color: #ECEBEB;
     }
