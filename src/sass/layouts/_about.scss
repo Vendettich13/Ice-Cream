@@ -1,15 +1,35 @@
 .about {
-  padding-bottom: 40px;
+  background-color: $second-background-color;
+
+  @media screen and (max-width: 767px) {
+    padding-bottom: 40px;
+  }
+}
+.tab-cont {
+  @include tablet {
+    padding: 0 32px;
+  }
+}
+.tab-direction {
+  @include tablet {
+    display: flex;
+  }
 }
 .about-label {
   margin-bottom: 15px;
 
   @include tablet {
+    margin-bottom: 16px;
   }
 
   font-family: 'Titan One';
   font-weight: 400;
   font-size: 18px;
+
+  @include tablet {
+    font-size: 26px;
+  }
+
   line-height: calc(21 / 18);
   text-align: center;
   text-transform: uppercase;
@@ -18,9 +38,18 @@
 .about-title {
   margin-bottom: 32px;
 
+  @include tablet {
+    margin-bottom: 40px;
+  }
+
   font-family: 'Titan One';
   font-weight: 400;
   font-size: 34px;
+
+  @include tablet {
+    font-size: 48px;
+  }
+
   line-height: calc(39 / 34);
   text-align: center;
   letter-spacing: 0.04em;
@@ -28,8 +57,16 @@
   color: $first-title-color;
 }
 .about-picture {
+  @include tablet {
+    width: 336px;
+    margin-right: 32px;
+  }
+
   display: block;
-  margin-bottom: 40px;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 40px;
+  }
 }
 .about-description {
   background-repeat: no-repeat;
@@ -51,6 +88,13 @@
 
   &__pre-text {
     width: 220px;
+
+    @include tablet {
+      width: 334px;
+      font-size: 14px;
+      line-height: calc(25 / 14);
+    }
+
     margin-bottom: 40px;
 
     font-weight: 500;
@@ -61,11 +105,42 @@
 
   &__post-text {
     width: 220px;
+
+    @include tablet {
+      width: 334px;
+      margin-bottom: 40px;
+      font-size: 14px;
+      line-height: calc(19 / 12);
+      letter-spacing: 0.04em;
+    }
+
     margin-bottom: 20px;
 
     font-weight: 500;
     font-size: 12px;
-    line-height: calc(19 / 12);
+    line-height: calc(25 / 14);
     color: #907e82;
   }
+}
+.about-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 177px;
+  height: 44px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(21 / 16);
+
+  color: $first-title-color;
+  border-radius: 22px;
+  background-color: $second-text-color;
+
+  border: none;
+  padding: 0;
+}
+.arrow-btn {
+  margin-left: 13px;
 }
