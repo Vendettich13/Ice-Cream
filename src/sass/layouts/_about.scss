@@ -30,8 +30,8 @@
 }
 .about-description {
   background-repeat: no-repeat;
+  background-size: contain;
   background-position: center;
-  background-size: cover;
 
   @include mobile {
     background-image: url(../images/about/about-2-1x.webp);
