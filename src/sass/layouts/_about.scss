@@ -12,7 +12,7 @@
     }
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position-y: 235px;
   }
 }
 .about-cont {
@@ -90,13 +90,17 @@
     margin-right: 100px;
   }
 
-  display: block;
-
   @media screen and (max-width: 767px) {
     margin-bottom: 40px;
   }
 }
 .about-description {
+  width: 220px;
+
+  @include tablet {
+    width: 334px;
+  }
+
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -108,20 +112,17 @@
     }
   }
   @include desktop {
+    width: 463px;
     padding-top: 90px;
   }
 
   &__pre-text {
-    width: 220px;
-
     @include tablet {
-      width: 334px;
       font-size: 14px;
       line-height: calc(25 / 14);
     }
 
     @include desktop {
-      width: 463px;
       margin-bottom: 32px;
 
       font-size: 16px;
@@ -138,10 +139,7 @@
   }
 
   &__post-text {
-    width: 220px;
-
     @include tablet {
-      width: 334px;
       margin-bottom: 40px;
       font-size: 14px;
       line-height: calc(19 / 12);
@@ -149,7 +147,6 @@
     }
 
     @include desktop {
-      width: 463px;
       margin-bottom: 40px;
 
       font-size: 14px;
@@ -183,6 +180,9 @@
 
   border: none;
   padding: 0;
+  cursor: pointer;
+  transition: 500ms background-color cubic-bezier(0.165, 0.84, 0.44, 1),
+    500ms color cubic-bezier(0.165, 0.84, 0.44, 1);
 
   &:hover,
   &:focus {
@@ -192,9 +192,11 @@
 }
 .arrow-btn {
   margin-left: 13px;
+  fill: $first-title-color;
+  transition: 500ms fill cubic-bezier(0.165, 0.84, 0.44, 1);
 
   .about-button:hover &,
   .about-button:focus & {
-    fill: green;
+    fill: $second-text-color;
   }
 }
