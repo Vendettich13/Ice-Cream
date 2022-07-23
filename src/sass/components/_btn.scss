@@ -1,8 +1,8 @@
 .btn {
+  padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
     margin: 0 auto;
       font-weight: 700;
       font-size: 16px;
@@ -11,15 +11,16 @@
     color: #D41443;
     background-color: #ffffff;
     border-radius: 22px;
-    padding: 2% 6%;
     min-width: 210px;
+    height: 44px;
     border: none;
+    cursor: pointer;
+
+      transition: 500ms background-color cubic-bezier(0.165, 0.84, 0.44, 1),
+    500ms color cubic-bezier(0.165, 0.84, 0.44, 1);
     
-      transition-property: background-color;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    .btn:hover,
-    .btn:focus {
+    &:hover,
+    &:focus {
     background-color: #ECEBEB;
     }
+  }
