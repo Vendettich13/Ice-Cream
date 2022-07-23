@@ -1,0 +1,134 @@
+.card-list__top-wrap {
+  position: relative;
+  width: 100%;
+  background-color: #fafafa;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-bottom: 17px;
+  padding-top: 43px;
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+.card-list__gradient {
+  padding-left: 15px;
+  padding-right: 8px;
+  padding-bottom: 9px;
+  background-image: repeating-linear-gradient(
+    #fafafa 31px,
+    #fafafa 61px,
+    #e1e1e1 61px,
+    #e1e1e1 62px
+  );
+}
+
+.card-list__iteam-text {
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.55;
+  /* font-size: 16px; */
+  /* line-height: 1.86; */
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: $first-text-color;
+  width: 100%;
+}
+
+.card-list__iteam-title {
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.86;
+  text-align: center;
+  color: $first-text-color;
+  margin-bottom: 32px;
+}
+
+.card-list__iteam-title::before {
+  content: '';
+  height: 4px;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('./images/reviews/points.svg');
+  margin-bottom: 16px;
+}
+
+.card-list__icon {
+  position: absolute;
+  fill: #e1e1e1;
+  top: 30px;
+  left: 53px;
+}
+
+/* Slideshow */
+* {
+  box-sizing: border-box;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.card-list__img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 500ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 18px;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-image 500ms cubic-bezier(0.165, 0.84, 0.44, 1),
+    background-color 500ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.active,
+.dot:hover {
+  background-image: url('./images/reviews/dot-home.svg');
+  background-size: 12.4px;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
