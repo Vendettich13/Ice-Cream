@@ -161,13 +161,18 @@
     line-height: calc(25 / 14);
     color: #907e82;
   }
+
+  &__span {
+    display: block;
+    margin-top: 20px;
+  }
 }
 .about-button {
   display: flex;
   align-items: center;
   justify-content: center;
 
-  width: 177px;
+  min-width: 177px;
   height: 44px;
 
   font-weight: 700;
