@@ -53,7 +53,7 @@
   display: block;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url('./images/reviews/points.svg');
+  background-image: url('../images/reviews/points.svg');
   margin-bottom: 16px;
 }
 
@@ -127,7 +127,7 @@
 
 .active,
 .dot:hover {
-  background-image: url('./images/reviews/dot-home.svg');
+  background-image: url('../images/reviews/dot-home.svg');
   background-size: 12.4px;
   background-repeat: no-repeat;
   background-color: transparent;
