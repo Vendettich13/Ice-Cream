@@ -1,0 +1,32 @@
+<header class="header">
+
+    <div class="header__container">
+
+        <picture>
+            <img class="logo" src="/src/images/header/group.svg"/>
+        </picture>
+        
+        <button class="menu-button" aria-controls="menu-container" data-menu-button>
+            <!-- <svg class="menu-button__svg" width="20px" height="12px" aria-label="Переключатель мобильного меню">
+                <use class="icon-menu" href="/src/images/header/burger.svg"></use>
+            </svg> -->
+            <img class="icon-menu" src="/src/images/header/burger.svg"/>
+        </button>
+
+        <div class="menu-container" id="menu-container" data-menu>
+            <button class="menu-button menu-button__close" aria-controls="menu-container">
+                <img class="icon-close" src="/src/images/header/close.svg"/>
+            </button>
+
+            <button class="button-buy">Buy now</button>
+            <ul class="list">
+                <li class="item">Home</li>
+                <li class="item">About us</li>
+                <li class="item">How it’s made?</li>
+                <li class="item">Our products</li>
+                <li class="item">Contact</li>
+            </ul>
+        </div>
+</header>
+
+<script src="./js/mobile-menu.js"></script>
