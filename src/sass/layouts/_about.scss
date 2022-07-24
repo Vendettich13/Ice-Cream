@@ -218,7 +218,14 @@
   transition: transform cubic-bezier(0.165, 0.84, 0.44, 1) 500ms;
 
   &__backdrop {
-    padding: 25px 30px 25px 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
+
+    padding: 60px;
+
     width: 100%;
     height: 100%;
 
@@ -227,6 +234,8 @@
     background-position: center;
     background-image: url(../images/about/milk.webp);
     background-color: #ffd4d9;
+
+    overflow: auto;
   }
 
   &.is-hidden {
@@ -242,6 +251,18 @@
     font-size: 12px;
     line-height: calc(25 / 14);
     color: #847679;
+
+    @include tablet {
+      font-size: 14px;
+      line-height: calc(19 / 12);
+      letter-spacing: 0.04em;
+    }
+
+    @include desktop {
+      font-size: 16px;
+      line-height: calc(27 / 14);
+      letter-spacing: 0.04em;
+    }
   }
 
   &__button {
@@ -275,7 +296,7 @@
 
   &__arrow {
     transform: rotate(180deg);
-    margin-right: 13px;
+    margin-right: 5px;
     fill: $second-text-color;
     transition: 500ms fill cubic-bezier(0.165, 0.84, 0.44, 1);
 
