@@ -1,5 +1,4 @@
 .card-list__top-wrap {
-  position: relative;
   width: 100%;
   background-color: #fafafa;
   padding-right: 50px;
@@ -31,7 +30,6 @@
   /* font-size: 16px; */
   /* line-height: 1.86; */
   text-align: center;
-  letter-spacing: 0.04em;
   color: $first-text-color;
   width: 100%;
 }
@@ -57,12 +55,6 @@
   margin-bottom: 16px;
 }
 
-.card-list__icon {
-  position: absolute;
-  fill: #e1e1e1;
-  top: 30px;
-  left: 53px;
-}
 
 /* Slideshow */
 * {
@@ -71,7 +63,15 @@
 
 /* Slideshow container */
 .slideshow-container {
-  margin: auto;
+  position: relative;
+  width: 320px;
+}
+
+.card-list__icon {
+  position: absolute;
+  fill: #E1E1E1;
+  top: 147px;
+  left: 69px;
 }
 
 /* Hide the images by default */
