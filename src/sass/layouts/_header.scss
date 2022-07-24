@@ -1,0 +1,132 @@
+.header {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+
+// logo
+.logo-img {
+  width: 199px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 128px;
+  }
+}
+
+//  menu-wrapper
+.main-menu {
+  display: flex;
+  align-items: center;
+  padding-top: 8px;
+
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 0px;
+  }
+
+  // ----- list ul -------------
+  &__list {
+    display: none;
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: center;
+    }
+  }
+  // -----  List li ----------------------
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  // ------ List link  --------------------
+  &__link {
+    font-weight: 700;
+    line-height: 1.31;
+    display: flex;
+    align-items: center;
+
+    color: #ffffff;
+
+    padding: 52px 0;
+
+    &:hover,
+    &:focus {
+      color: #d41443;
+    }
+
+    &.active {
+      color: #d41443;
+    }
+  }
+}
+
+// burger
+.burger-button {
+  display: inline-block;
+
+  margin-left: auto;
+  height: 14px;
+
+  padding: 0;
+
+  background: transparent;
+  border: none;
+
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.burger-button__svg {
+  width: 20px;
+  height: 14px;
+}
+
+// BUTTON BUY
+.button-buy {
+  display: inline-block;
+  width: 160px;
+  height: 44px;
+
+  margin-left: 32px;
+
+  background-color: #ffffff;
+
+  border: none;
+  border-radius: 22px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #d41443;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
+
+  &__img {
+    height: 10px;
+    margin-left: 12px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
