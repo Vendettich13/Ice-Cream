@@ -7,6 +7,16 @@
   padding-top: 43px;
   margin-top: 32px;
   margin-bottom: 16px;
+
+  @include tablet {
+    padding-right: 6px;
+    padding-left: 6px;
+    padding-bottom: 36px;
+    padding-top: 37px;
+    margin-top: 20px;
+    margin-bottom: 4px;
+    width: 620px;
+  }
 }
 
 .card-list__gradient {
@@ -19,6 +29,12 @@
     #e1e1e1 61px,
     #e1e1e1 62px
   );
+
+  @include tablet {
+    padding-left: 44px;
+    padding-right: 50px;
+    padding-bottom: 8px;
+  }
 }
 
 .card-list__iteam-text {
@@ -32,17 +48,31 @@
   text-align: center;
   color: $first-text-color;
   width: 100%;
+  transform: translateY(-1px);
+
+  @include tablet {
+    font-size: 14px;
+    line-height: 2.16;
+    letter-spacing: 0.04em;
+  }
 }
 
 .card-list__iteam-title {
   font-family: 'DM Sans', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 14px;
   line-height: 1.86;
+  /* font-size: 20px; */
   text-align: center;
-  color: $first-text-color;
-  margin-bottom: 32px;
+  color: #000000;
+  /* margin-bottom: 32px; */
+  margin-bottom: 16px;
+
+  @include tablet {
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
 }
 
 .card-list__iteam-title::before {
@@ -55,7 +85,6 @@
   margin-bottom: 16px;
 }
 
-
 /* Slideshow */
 * {
   box-sizing: border-box;
@@ -65,15 +94,45 @@
 .slideshow-container {
   position: relative;
   width: 320px;
+
+  @include tablet {
+    width: 768px;
+    padding-left: 74px;
+    padding-right: 74px;
+  }
 }
 
 .card-list__icon {
   position: absolute;
-  fill: #E1E1E1;
+  fill: #e1e1e1;
   top: 147px;
   left: 69px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: none;
+  }
 }
 
+. @media screen and (min-width: 320px) and (max-width: 767px) {
+  .card-list__icon--tablet {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .card-list__icon--tablet {
+    position: absolute;
+    fill: #e1e1e1;
+    top: 125px;
+    left: 80px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card-list__icon--tablet {
+    display: none;
+  }
+}
 /* Hide the images by default */
 .mySlides {
   display: none;
