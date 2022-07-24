@@ -1,11 +1,10 @@
-<section class="about">
+<section class="about" id="about">
 
     <div class="container about-cont">
-        <p class="about-label">tradition and love</p>
-        <h2 class="about-title">how it’s made?</h2>
+        <p class="about__label">tradition and love</p>
+        <h2 class="about__title">how it’s made?</h2>
         <div class="tab-direction">
-
-            <picture class="about-picture">
+            <picture class="tab-direction__picture">
                 <source srcset="./images/about/about-desk-1-1x.webp 1x,
                                             ./images/about/about-desk-1-2x.webp 2x" media="(min-width: 1200px)"
                     type="image/webp">
@@ -15,9 +14,9 @@
                 <source srcset="./images/about/about-1-1x.webp 1x,
                                             ./images/about/about-1-2x.webp 2x" media="(min-width: 320px)"
                     type="image/webp">
-                <img class="about__img" src="./images/about/img-about.jpg" alt="cow with milk" width="280" height="280">
+                <img class="tab-direction__img" src="./images/about/img-about.jpg" alt="cow with milk" width="280"
+                    height="280">
             </picture>
-
             <div class="about-description">
                 <p class="about-description__pre-text">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel
                     justo cursus, faucibus
@@ -35,11 +34,40 @@
                         accumsan.
                     </span>
                 </p>
-                <button type="button" class="about-button btn">Read more
-                    <svg class="arrow-btn" width="7" height="10">
+                <button aria-label="about-modal-open" data-about-modal-open type="button"
+                    class="about-description__button btn">Read
+                    more
+                    <svg class="about-description__arrow" width="7" height="10">
                         <use href="./images/svg-sprite/svg-sprite.svg#icon-arrow-right"></use>
                     </svg>
                 </button>
+
+
+            </div>
+            <div data-about-modal class="about-modal is-hidden">
+                <div class="about-modal__backdrop">
+                    <p class="about-modal__text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos
+                        reprehenderit commodi id
+                        necessitatibus
+                        aperiam debitis soluta mollitia esse, temporibus nobis vel voluptatum sit nam ut autem, eum
+                        error ex nemo.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos reprehenderit commodi id
+                        necessitatibus
+                        aperiam debitis soluta mollitia esse, temporibus nobis vel voluptatum sit nam ut autem, eum
+                        error ex nemo.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+
+                    </p>
+                    <button aria-label="about-modal-close" data-about-modal-close type="button"
+                        class="about-modal__button btn">
+                        <svg class="about-modal__arrow" width="7" height="10">
+                            <use href="./images/svg-sprite/svg-sprite.svg#icon-arrow-right"></use>
+                        </svg>Back</button>
+                </div>
             </div>
 
         </div>

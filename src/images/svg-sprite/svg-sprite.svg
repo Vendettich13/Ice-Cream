@@ -36,6 +36,9 @@
 <symbol id="icon-menu-close" viewBox="0 0 32 32">
 <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M2.52 2l26.96 28M2 29.48l28-26.96"></path>
 </symbol>
+<symbol id="icon-close-cross" viewBox="0 0 32 32">
+<path d="M26.667 7.303l-1.97-1.97-7.808 7.808-7.808-7.808-1.97 1.97 7.808 7.808-7.808 7.808 1.97 1.97 7.808-7.808 7.808 7.808 1.97-1.97-7.808-7.808 7.808-7.808z"></path>
+</symbol>
 <symbol id="icon-arrow-right" viewBox="0 0 26 32">
 <path d="M5.12 32c-0.96 0-1.6-0.32-2.24-0.96-1.28-1.28-0.96-3.2 0.32-4.48l11.52-10.56-11.84-10.56c-1.28-1.28-1.28-3.2-0.32-4.48 1.28-1.28 3.2-1.28 4.48-0.32l14.080 12.8c0.96 0.64 1.28 1.6 1.28 2.56s-0.32 1.92-0.96 2.24l-14.080 12.8c-0.64 0.64-1.28 0.96-2.24 0.96z"></path>
 </symbol>

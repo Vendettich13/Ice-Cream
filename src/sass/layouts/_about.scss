@@ -1,6 +1,58 @@
 .about {
   background-color: $second-background-color;
 
+  &__label {
+    margin-bottom: 15px;
+
+    font-family: 'Titan One';
+    font-weight: 400;
+    font-size: 18px;
+
+    @include tablet {
+      margin-bottom: 16px;
+      font-size: 26px;
+      line-height: calc(30 / 26);
+    }
+
+    @include desktop {
+      font-size: 30px;
+      letter-spacing: 0.04em;
+      line-height: calc(34 / 30);
+    }
+
+    line-height: calc(21 / 18);
+    text-align: center;
+    text-transform: uppercase;
+    color: $second-title-color;
+  }
+
+  &__title {
+    margin-bottom: 32px;
+
+    @include tablet {
+      margin-bottom: 40px;
+      font-size: 48px;
+      line-height: calc(55 / 48);
+    }
+
+    @include desktop {
+      margin-bottom: 60px;
+      font-size: 58px;
+      line-height: calc(66 / 58);
+      letter-spacing: 0.06em;
+    }
+
+    font-family: 'Titan One';
+    font-weight: 400;
+    font-size: 34px;
+
+    line-height: calc(39 / 34);
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $first-title-color;
+  }
+
   @media screen and (max-width: 767px) {
     padding-bottom: 40px;
   }
@@ -10,97 +62,42 @@
     @include retina {
       background-image: url(../images/about/about-desk-2-2x.webp);
     }
+
     background-size: contain;
     background-repeat: no-repeat;
     background-position-y: 235px;
+  }
+}
+
+.tab-direction {
+  position: relative;
+
+  @include tablet {
+    display: flex;
   }
 
   &__img {
     width: 100%;
   }
-}
-.about-cont {
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    padding: 0 32px;
-  }
 
-  @include desktop {
-    padding: 0 16px;
-  }
-}
-.tab-direction {
-  @include tablet {
-    display: flex;
-  }
-}
-.about-label {
-  margin-bottom: 15px;
+  &__picture {
+    @include tablet {
+      width: 336px;
+      margin-right: 32px;
+    }
 
-  font-family: 'Titan One';
-  font-weight: 400;
-  font-size: 18px;
+    @include desktop {
+      width: 500px;
+      margin-right: 100px;
+    }
 
-  @include tablet {
-    margin-bottom: 16px;
-    font-size: 26px;
-    line-height: calc(30 / 26);
-  }
-
-  @include desktop {
-    font-size: 30px;
-    letter-spacing: 0.04em;
-    line-height: calc(34 / 30);
-  }
-
-  line-height: calc(21 / 18);
-  text-align: center;
-  text-transform: uppercase;
-  color: $second-title-color;
-}
-.about-title {
-  margin-bottom: 32px;
-
-  @include tablet {
-    margin-bottom: 40px;
-    font-size: 48px;
-    line-height: calc(55 / 48);
-  }
-
-  @include desktop {
-    margin-bottom: 60px;
-    font-size: 58px;
-    line-height: calc(66 / 58);
-    letter-spacing: 0.06em;
-  }
-
-  font-family: 'Titan One';
-  font-weight: 400;
-  font-size: 34px;
-
-  line-height: calc(39 / 34);
-  text-align: center;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: $first-title-color;
-}
-.about-picture {
-  @include tablet {
-    width: 336px;
-    margin-right: 32px;
-  }
-
-  @include desktop {
-    width: 500px;
-    margin-right: 100px;
-  }
-
-  @media screen and (max-width: 767px) {
-    margin-bottom: 40px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 40px;
+    }
   }
 }
+
 .about-description {
-  width: 220px;
-
   @include tablet {
     width: 334px;
   }
@@ -121,6 +118,13 @@
   }
 
   &__pre-text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(19 / 12);
+    color: $first-text-color;
+
+    margin-bottom: 40px;
+
     @include tablet {
       font-size: 14px;
       line-height: calc(25 / 14);
@@ -133,16 +137,16 @@
       line-height: calc(28 / 16);
       letter-spacing: 0.04em;
     }
-
-    margin-bottom: 40px;
-
-    font-weight: 500;
-    font-size: 12px;
-    line-height: calc(19 / 12);
-    color: $first-text-color;
   }
 
   &__post-text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(19 / 16);
+    color: #907e82;
+
+    margin-bottom: 20px;
+
     @include tablet {
       margin-bottom: 40px;
       font-size: 14px;
@@ -157,55 +161,137 @@
       line-height: calc(27 / 14);
       letter-spacing: 0.04em;
     }
-
-    margin-bottom: 20px;
-
-    font-weight: 500;
-    font-size: 12px;
-    line-height: calc(25 / 14);
-    color: #907e82;
   }
 
   &__span {
     display: block;
     margin-top: 20px;
   }
-}
-.about-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
-  min-width: 177px;
-  height: 44px;
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-  font-weight: 700;
-  font-size: 16px;
-  line-height: calc(21 / 16);
+    min-width: 177px;
+    height: 44px;
 
-  color: $first-title-color;
-  border-radius: 22px;
-  background-color: $second-text-color;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(21 / 16);
 
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  transition: 500ms background-color cubic-bezier(0.165, 0.84, 0.44, 1),
-    500ms color cubic-bezier(0.165, 0.84, 0.44, 1);
+    color: $first-title-color;
+    border-radius: 22px;
+    background-color: $second-text-color;
 
-  &:hover,
-  &:focus {
-    color: $second-text-color;
-    background-color: $first-title-color;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: 500ms background-color cubic-bezier(0.165, 0.84, 0.44, 1),
+      500ms color cubic-bezier(0.165, 0.84, 0.44, 1);
+
+    &:hover,
+    &:focus {
+      color: $second-text-color;
+      background-color: $first-title-color;
+    }
+  }
+
+  &__arrow {
+    margin-left: 13px;
+    fill: $first-title-color;
+    transition: 500ms fill cubic-bezier(0.165, 0.84, 0.44, 1);
+
+    .about-description__button:hover &,
+    .about-description__button:focus & {
+      fill: $second-text-color;
+    }
   }
 }
-.arrow-btn {
-  margin-left: 13px;
-  fill: $first-title-color;
-  transition: 500ms fill cubic-bezier(0.165, 0.84, 0.44, 1);
 
-  .about-button:hover &,
-  .about-button:focus & {
+.about-modal {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+
+  transition: transform cubic-bezier(0.165, 0.84, 0.44, 1) 500ms;
+
+  &__backdrop {
+    padding: 25px 30px 25px 20px;
+    width: 100%;
+    height: 100%;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url(../images/about/milk.webp);
+    background-color: #ffd4d9;
+  }
+
+  &.is-hidden {
+    transform: translate(-50%, -100%);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transition: 500ms;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(25 / 14);
+    color: #847679;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 137px;
+    height: 44px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(21 / 16);
+
+    color: $second-text-color;
+    border-radius: 22px;
+    background-color: $first-title-color;
+
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: 500ms background-color cubic-bezier(0.165, 0.84, 0.44, 1),
+      500ms color cubic-bezier(0.165, 0.84, 0.44, 1);
+
+    &:hover,
+    &:focus {
+      color: $first-title-color;
+      background-color: $second-text-color;
+    }
+  }
+
+  &__arrow {
+    transform: rotate(180deg);
+    margin-right: 13px;
     fill: $second-text-color;
+    transition: 500ms fill cubic-bezier(0.165, 0.84, 0.44, 1);
+
+    .about-modal__button:hover &,
+    .about-modal__button:focus & {
+      fill: $first-title-color;
+    }
+  }
+}
+
+.about-cont {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding: 0 32px;
+  }
+
+  @include desktop {
+    padding: 0 16px;
   }
 }
