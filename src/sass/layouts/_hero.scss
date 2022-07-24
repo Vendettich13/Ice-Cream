@@ -111,6 +111,12 @@
 
   background-color: #ffffff;
 
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+    color: #d41443;
+  }
+
   @media screen and (min-width: 1200px) {
     width: 138px;
     height: 40px;
@@ -391,6 +397,11 @@
   display: block;
   border-radius: 50%;
   margin-top: 7px;
+
+  &:focus,
+  &:hover {
+    background-color: #ecebeb;
+  }
 
   @media screen and (min-width: 1200px) {
     width: 26px;

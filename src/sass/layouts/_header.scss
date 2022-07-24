@@ -55,6 +55,11 @@
 
     padding: 52px 0;
 
+    &:hover,
+    &:focus {
+      color: #d41443;
+    }
+
     &.active {
       color: #d41443;
     }
@@ -105,6 +110,13 @@
 
   color: #d41443;
 
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
+
   &__img {
     height: 10px;
     margin-left: 12px;
@@ -112,5 +124,9 @@
 
   @media screen and (min-width: 1200px) {
     margin-left: auto;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
   }
 }
