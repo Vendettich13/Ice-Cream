@@ -169,11 +169,14 @@
 }
 
 /* Next & previous buttons */
+.slider-buttons {
+  position: relative;
+}
 .prev,
 .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: -250px;
   width: auto;
   margin-top: -22px;
   padding: 16px;
@@ -184,14 +187,14 @@
   border-radius: 0 3px 3px 0;
 
   @include tablet {
-    top: 30%;
+    top: -180px;
     font-size: 22px;
     padding: 30px;
     margin-top: -34px;
   }
 
   @include desktop {
-    top: 20%;
+    top: -200px;
     font-size: 40px;
     padding: 60px;
     margin-top: -60px;
