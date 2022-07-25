@@ -1,0 +1,157 @@
+.contacts {
+  &__card-set {
+    margin-bottom: 32px;
+    background: #ffffff;
+  }
+  &__card {
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    padding: 40px 32px;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__item-title {
+    width: 80px;
+    height: 16px;
+    padding: 3px 25px 4px;
+    border-radius: 4px;
+    background-color: #f0d1a5;
+    color: #ffffff;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.83;
+    letter-spacing: 0.04em;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    margin-bottom: 20px;
+
+    &--style {
+      width: 138px;
+      height: 28px;
+      padding: 3px 27px 4px;
+
+      background-color: #c2e297;
+    }
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.83;
+    letter-spacing: 0.04em;
+
+    margin-bottom: 8px;
+  }
+
+  &__description {
+    width: 179px;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #907e82;
+
+    margin-bottom: 24px;
+  }
+
+  &__line {
+    width: 100%;
+    height: 1px;
+    background-color: #e1e1e1;
+    border: 2px;
+    margin: 0;
+  }
+
+  &__aside {
+    margin-bottom: 24px;
+  }
+
+  &__date:first-child {
+    margin-bottom: 8px;
+  }
+
+  &__day {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.83;
+    letter-spacing: 0.04em;
+  }
+
+  &__time {
+    color: #ffa5ba;
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+
+    color: #907e82;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 177px;
+    height: 44px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(21 / 16);
+
+    color: $first-title-color;
+    border-radius: 22px;
+    background-color: $second-text-color;
+
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: 500ms background-color cubic-bezier(0.165, 0.84, 0.44, 1),
+      500ms color cubic-bezier(0.165, 0.84, 0.44, 1);
+
+    &:first-child {
+      color: $second-text-color;
+      background-color: $first-title-color;
+      margin-bottom: 10px;
+    }
+
+    &:hover,
+    &:focus {
+      color: $second-text-color;
+      background-color: $first-title-color;
+    }
+  }
+}
+.arrow-button {
+  margin-left: 13px;
+  fill: $second-text-color;
+  transition: 500ms fill cubic-bezier(0.165, 0.84, 0.44, 1);
+
+  //   .contacts__button:hover &,
+  //   .contacts__button:focus & {
+  //     fill: $first-title-color;
+  //   }
+}
+
+.arrow-btn-addition {
+  margin-left: 13px;
+  fill: $first-title-color;
+  transition: 500ms fill cubic-bezier(0.165, 0.84, 0.44, 1);
+
+  .contacts__button:hover &,
+  .contacts__button:focus & {
+    fill: $second-text-color;
+  }
+}
