@@ -87,7 +87,7 @@
     height: 1px;
     background-color: #e1e1e1;
     border: 2px;
-    margin: 0;
+    margin-bottom: 24px;
   }
 
   &__aside {
@@ -110,12 +110,29 @@
   }
 
   &__link {
+    position: relative;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.5;
 
     color: #907e82;
   }
+
+  &__link:hover {
+    color: #db0037;
+  }
+
+  &__link:hover .contacts__link-icon {
+    opacity: 1;
+  }
+  &__link-icon {
+    position: absolute;
+    left: -20px;
+    bottom: 0;
+    fill: #db0037;
+    opacity: 0;
+  }
+
   &__container-btn {
     @include tablet {
       display: flex;
@@ -179,11 +196,6 @@
   margin-left: 13px;
   fill: $second-text-color;
   transition: 500ms fill cubic-bezier(0.165, 0.84, 0.44, 1);
-
-  //   .contacts__button:hover &,
-  //   .contacts__button:focus & {
-  //     fill: $first-title-color;
-  //   }
 }
 
 .arrow-btn-addition {
