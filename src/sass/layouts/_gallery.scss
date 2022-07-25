@@ -1,0 +1,111 @@
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 30px 0;
+  width: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    $second-background-color 31%,
+    #ffffff 31%,
+    #ffffff 69%
+  );
+
+  @include tablet {
+    background-image: linear-gradient(
+      to bottom,
+      $second-background-color 57%,
+      #ffffff 57%,
+      #ffffff 43%
+    );
+  }
+
+  @include desktop {
+    padding: 60px 0;
+    background-image: linear-gradient(
+      to bottom,
+      $second-background-color 27%,
+      #ffffff 27%,
+      #ffffff 73%
+    );
+  }
+}
+
+.grid__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 2px;
+
+  @include tablet {
+    gap: 6px;
+  }
+
+  @include desktop {
+    justify-content: center;
+    gap: 8px;
+  }
+}
+
+.grid__single {
+  height: 100%;
+}
+
+.grid--bottom {
+  margin-bottom: 2px;
+
+  @include tablet {
+    margin-bottom: 6px;
+  }
+
+  @include desktop {
+    margin-bottom: 8px;
+  }
+}
+
+.grid__dual--middle {
+  padding-top: 28px;
+  padding-bottom: 18px;
+
+  @include tablet {
+    padding-top: 67px;
+    padding-bottom: 44px;
+  }
+
+  @include desktop {
+    padding-top: 89px;
+    padding-bottom: 58px;
+  }
+}
+
+.grid__dual--below {
+  padding-top: 31px;
+  padding-bottom: 15px;
+
+  @include tablet {
+    padding-top: 75px;
+    padding-bottom: 35px;
+  }
+
+  @include desktop {
+    padding-top: 99px;
+    padding-bottom: 46px;
+  }
+}
+
+.grid__dual--higher {
+  padding-top: 21px;
+  padding-bottom: 25px;
+
+  @include tablet {
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+
+  @include desktop {
+    padding-top: 66px;
+    padding-bottom: 79px;
+  }
+}
