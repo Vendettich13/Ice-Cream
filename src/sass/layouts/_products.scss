@@ -60,9 +60,13 @@
         position: relative;
         border-radius: 24px;
         text-align: center;
-        padding: 0 0 40px;
-        padding-top: 160px;
+        padding: 160px 0 40px;
         margin-top: 140px;
+        @media screen and (min-width: 768px) and (max-width:1199px) {
+            margin-top: 138px;
+            padding: 118px 0 40px;
+        }
+        
 
         &--pink {
             background-color: #FFB8CA;
@@ -82,6 +86,18 @@
                 (min-resolution: 2dppx) {
                     background-image: url(../images/products-image/home-pic1-2x.webp);    
                 }
+                @media screen and (min-width: 768px) and (max-width:1199px) {
+                    background-image: url(../images/products-image/home-pic1-tab.webp);
+                    width: 224px;
+                    height: 224px;
+                    top: -138px;
+                    left: calc(50% - 112px);
+                    @media (min-device-pixel-ratio: 2),
+                    (min-resolution: 192dpi),
+                    (min-resolution: 2dppx) {
+                        background-image: url(../images/products-image/home-pic1-tab-2x.webp);    
+                    }
+            }
             }
         }
         &--crema {
@@ -102,6 +118,18 @@
                 (min-resolution: 2dppx) {
                     background-image: url(../images/products-image/home-pic2-2x.webp);    
                 }
+                @media screen and (min-width: 768px) and (max-width:1199px) {
+                    background-image: url(../images/products-image/home-pic2-tab.webp);
+                    width: 224px;
+                    height: 224px;
+                    top: -138px;
+                    left: calc(50% - 112px);
+                    @media (min-device-pixel-ratio: 2),
+                    (min-resolution: 192dpi),
+                    (min-resolution: 2dppx) {
+                        background-image: url(../images/products-image/home-pic2-tab-2x.webp);    
+                    }
+            }
             }
         }
         &--green {
@@ -122,6 +150,18 @@
                 (min-resolution: 2dppx) {
                     background-image: url(../images/products-image/home-pic3-2x.webp);    
                 }
+                @media screen and (min-width: 768px) and (max-width:1199px) {
+                    background-image: url(../images/products-image/home-pic3-tab.webp);
+                    width: 224px;
+                    height: 224px;
+                    top: -138px;
+                    left: calc(50% - 112px);
+                    @media (min-device-pixel-ratio: 2),
+                    (min-resolution: 192dpi),
+                    (min-resolution: 2dppx) {
+                        background-image: url(../images/products-image/home-pic3-tab-2x.webp);    
+                    }
+            }
             }
         }
     }
