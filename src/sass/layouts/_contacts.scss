@@ -1,25 +1,43 @@
+.section-conacts {
+  background-image: linear-gradient(
+    to bottom,
+    $first-background-color 0%,
+    $first-background-color 20%,
+    $second-background-color 20%,
+    $second-background-color 100%
+  );
+  padding-top: 0;
+  padding-bottom: 40px;
+}
 .contacts {
   &__card-set {
+    grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 32px;
-    background: #ffffff;
+    background: transparent;
+    @include tablet {
+      margin-bottom: 60px;
+      display: grid;
+      grid-template-columns: 3 / 1fr;
+      gap: 32px;
+    }
   }
   &__card {
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
     padding: 40px 32px;
+    background-color: $second-text-color;
 
     &:not(:last-child) {
       margin-bottom: 20px;
-    }
-    &:not(:last-child) {
-      margin-bottom: 20px;
+      @include tablet {
+        margin-bottom: 0;
+      }
     }
   }
 
   &__item-title {
     width: 80px;
     height: 16px;
-    padding: 3px 25px 4px;
     border-radius: 4px;
     background-color: #f0d1a5;
     color: #ffffff;
@@ -31,15 +49,15 @@
 
     display: flex;
     align-items: center;
-    text-align: center;
+    justify-content: center;
 
     margin-bottom: 20px;
+    @include tablet {
+      height: 28px;
+    }
 
     &--style {
       width: 138px;
-      height: 28px;
-      padding: 3px 27px 4px;
-
       background-color: #c2e297;
     }
   }
@@ -98,6 +116,12 @@
 
     color: #907e82;
   }
+  &__container-btn {
+    @include tablet {
+      display: flex;
+      justify-content: center;
+    }
+  }
 
   &__button {
     display: flex;
@@ -121,16 +145,33 @@
     transition: 500ms background-color cubic-bezier(0.165, 0.84, 0.44, 1),
       500ms color cubic-bezier(0.165, 0.84, 0.44, 1);
 
+    @include tablet {
+      margin: 0;
+    }
+
     &:first-child {
       color: $second-text-color;
       background-color: $first-title-color;
       margin-bottom: 10px;
+      @include tablet {
+        margin-right: 15px;
+        margin-bottom: 0;
+      }
+    }
+
+    &:first-child:hover {
+      color: $second-text-color;
+      background-color: #db0037;
+      transform: scale(1.1);
+      box-shadow: -3px -4px 5px #7b0c2847;
     }
 
     &:hover,
     &:focus {
       color: $second-text-color;
       background-color: $first-title-color;
+      transform: scale(1.1);
+      box-shadow: -3px -4px 5px #7b0c2847;
     }
   }
 }
