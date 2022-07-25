@@ -3,6 +3,9 @@
         @media screen and (min-width: 768px) and (max-width:1199px) {
             padding: 0 32px;
         }
+        @media screen and (min-width: 1200px) {
+            padding: 0 16px;
+        }
     }
     &__label {
         font-family: 'Titan One';
@@ -14,14 +17,13 @@
         text-transform: uppercase;
         color: #FFA5BA;
         @media screen and (min-width: 768px) and (max-width:1199px) {
-            font-family: 'Titan One';
-            font-style: normal;
-            font-weight: 400;
             font-size: 26px;
             line-height: 1.15;
-            text-align: center;
-            text-transform: uppercase;
-            color: #FFA5BA;
+        }
+        @media screen and (min-width: 1200px) {
+            font-size: 30px;
+            line-height: 1.13;
+            letter-spacing: 0.04em;
         }
     }
 
@@ -37,15 +39,15 @@
         color: #D41443;
         margin: 15px 0 8px;
         @media screen and (min-width: 768px) and (max-width:1199px) {
-            font-family: 'Titan One';
-            font-style: normal;
-            font-weight: 400;
             font-size: 48px;
             line-height: 1.15;
-            text-align: center;
-            letter-spacing: 0.04em;
-            text-transform: uppercase;
-            color: #D41443;
+            margin: 18px 0 20px;
+        }
+         @media screen and (min-width: 1200px) {
+            font-size: 58px;
+            line-height: 1.14;
+            letter-spacing: 0.06em;
+            margin: 16px 0 20px;
         }
     }
 
@@ -53,6 +55,10 @@
         @media screen and (min-width: 768px) and (max-width:1199px) {
             display: flex;
             gap: 16px;
+        }
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            gap: 32px;
         }
     }
 
@@ -65,6 +71,10 @@
         @media screen and (min-width: 768px) and (max-width:1199px) {
             margin-top: 138px;
             padding: 118px 0 40px;
+        }
+        @media screen and (min-width: 1200px) {
+            padding: 165px 0 60px;
+            margin-top: 261px;
         }
         
 
@@ -97,7 +107,19 @@
                     (min-resolution: 2dppx) {
                         background-image: url(../images/products-image/home-pic1-tab-2x.webp);    
                     }
-            }
+                 }
+                @media screen and (min-width: 1200px) {
+                    background-image: url(../images/products-image/home-pic1-desktop.webp);
+                    width: 368px;
+                    height: 394px;
+                    top: -261px;
+                    left: calc(50% - 184px);
+                    @media (min-device-pixel-ratio: 2),
+                    (min-resolution: 192dpi),
+                    (min-resolution: 2dppx) {
+                        background-image: url(../images/products-image/home-pic1-desktop-2x.webp);    
+                    }
+                }
             }
         }
         &--crema {
@@ -129,6 +151,18 @@
                     (min-resolution: 2dppx) {
                         background-image: url(../images/products-image/home-pic2-tab-2x.webp);    
                     }
+            }
+            @media screen and (min-width: 1200px) {
+                background-image: url(../images/products-image/home-pic2-desktop.webp);
+                width: 368px;
+                height: 394px;
+                top: -261px;
+                left: calc(50% - 184px);
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: url(../images/products-image/home-pic2-desktop-2x.webp);    
+                }
             }
             }
         }
@@ -162,6 +196,18 @@
                         background-image: url(../images/products-image/home-pic3-tab-2x.webp);    
                     }
             }
+            @media screen and (min-width: 1200px) {
+                background-image: url(../images/products-image/home-pic3-desktop.webp);
+                width: 368px;
+                height: 394px;
+                top: -261px;
+                left: calc(50% - 184px);
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: url(../images/products-image/home-pic3-desktop-2x.webp);    
+                }
+            }
             }
         }
     }
@@ -176,7 +222,11 @@
         letter-spacing: 0.04em;
         text-transform: uppercase;
         color: #FFFFFF;
-        margin-bottom: 32px
+        margin-bottom: 32px;
+        @media screen and (min-width: 1200px) {
+            font-size: 30px;
+            line-height: 1.13;
+        }
     }
 
     &__dot {
@@ -193,7 +243,7 @@
     &__description {
         width: 100%;
         padding: 0 40px;
-        margin: 32 0;
+        margin: 32px 0;
         font-style: normal;
         font-weight: 700;
         font-size: 14px;
@@ -210,6 +260,12 @@
             letter-spacing: 0.04em;
             color: #FFFFFF;
             padding: 0 32px;
+        }
+        @media screen and (min-width: 1200px) {
+            font-size: 16px;
+            line-height: 1.75;
+            padding: 0 63px;
+            margin: 32px 0 60px;
         }
     }
 
