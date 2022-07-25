@@ -1,32 +1,23 @@
-<header class="header">
-
-    <div class="header__container">
-
-        <picture>
-            <img class="logo" src="/src/images/header/group.svg"/>
-        </picture>
-        
-        <button class="menu-button" aria-controls="menu-container" data-menu-button>
-            <!-- <svg class="menu-button__svg" width="20px" height="12px" aria-label="Переключатель мобильного меню">
-                <use class="icon-menu" href="/src/images/header/burger.svg"></use>
-            </svg> -->
-            <img class="icon-menu" src="/src/images/header/burger.svg"/>
+<div>
+    <div class="mob-menu__container" id="mob-menu__container" data-menu>
+        <button class="mob-menu__button-close" aria-controls="menu-container" data-menu-button-close>
+            <img class="icon-close" src="/src/images/header/close.svg"/>
         </button>
-
-        <div class="menu-container" id="menu-container" data-menu>
-            <button class="menu-button menu-button__close" aria-controls="menu-container">
-                <img class="icon-close" src="/src/images/header/close.svg"/>
-            </button>
-
-            <button class="button-buy">Buy now</button>
-            <ul class="list">
-                <li class="item">Home</li>
-                <li class="item">About us</li>
-                <li class="item">How it’s made?</li>
-                <li class="item">Our products</li>
-                <li class="item">Contact</li>
-            </ul>
-        </div>
-</header>
-
-<script src="./js/mobile-menu.js"></script>
+    
+        <button type="button" class="mob-menu__button-buy button-buy">
+            Buy now
+            <svg width="8" heigth="10" class="button-buy__img">
+              <use href="./images/svg-sprite/svg-sprite.svg#icon-arrow-right"></use>
+            </svg>
+        </button>
+    
+        <ul class="mob-menu__list">
+            <li class="mob-menu__item mob-menu__item--current"><a href="" class="link">Home</a></li>
+            <li class="mob-menu__item"><a href="" class="link">About us</a></li>
+            <li class="mob-menu__item"><a href="#howitsmade" class="link">How it’s made?</a></li>
+            <li class="mob-menu__item"><a href="#products" class="link">Our products</a></li>
+            <li class="mob-menu__item"><a href="#contacts" class="link">Contact</a></li>
+        </ul>
+    </div>
+    <div class="mob-menu__overlay"></div>
+</div>
