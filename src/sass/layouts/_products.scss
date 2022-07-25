@@ -294,8 +294,10 @@
                     &:focus {
                         color: $first-title-color;
                         background-color: $second-text-color;
+                        transform: rotate(180deg);
                         transform: scale(1.1);
                         box-shadow: -3px -4px 5px #7b0c2847;
+                       
     }
         }
     }
