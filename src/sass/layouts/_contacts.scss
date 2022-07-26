@@ -8,6 +8,9 @@
   );
   padding-top: 0;
   padding-bottom: 40px;
+  @include tablet {
+    padding-bottom: 60px;
+  }
 }
 .contacts {
   &__card-set {

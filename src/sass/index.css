@@ -1960,6 +1960,11 @@ section {
   padding-top: 0;
   padding-bottom: 40px;
 }
+@media screen and (min-width: 768px) {
+  .section-conacts {
+    padding-bottom: 60px;
+  }
+}
 
 .contacts__card-set {
   margin-bottom: 32px;
