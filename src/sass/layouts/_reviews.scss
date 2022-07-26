@@ -200,7 +200,11 @@
     margin-top: -60px;
   }
 }
-
+.slider-btn {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
 
 /* Position the "next button" to the right */
 .next {
