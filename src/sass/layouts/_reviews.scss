@@ -5,6 +5,9 @@
   @include tablet {
     padding-top: 0;
 }
+ @include desktop {
+  padding-top: 60px;
+}
 }
 
 .card-list__top-wrap {
