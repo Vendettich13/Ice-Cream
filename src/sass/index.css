@@ -2031,6 +2031,11 @@ section {
   padding-top: 0;
   padding-bottom: 40px;
 }
+@media screen and (min-width: 768px) {
+  .section-conacts {
+    padding-bottom: 60px;
+  }
+}
 
 .contacts__card-set {
   margin-bottom: 32px;
@@ -2212,7 +2217,7 @@ section {
   border: none;
   padding: 0;
   cursor: pointer;
-  transition: 500ms background-color cubic-bezier(0.165, 0.84, 0.44, 1), 500ms color cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: 500ms background-color cubic-bezier(0.165, 0.84, 0.44, 1), 500ms color cubic-bezier(0.165, 0.84, 0.44, 1), transform 500ms cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 @media screen and (min-width: 768px) {
   .contacts__button {

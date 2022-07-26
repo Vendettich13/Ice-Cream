@@ -8,6 +8,9 @@
   );
   padding-top: 0;
   padding-bottom: 40px;
+  @include tablet {
+    padding-bottom: 60px;
+  }
 }
 .contacts {
   &__card-set {
@@ -204,7 +207,8 @@
     padding: 0;
     cursor: pointer;
     transition: 500ms background-color cubic-bezier(0.165, 0.84, 0.44, 1),
-      500ms color cubic-bezier(0.165, 0.84, 0.44, 1);
+      500ms color cubic-bezier(0.165, 0.84, 0.44, 1),
+      transform 500ms cubic-bezier(0.165, 0.84, 0.44, 1);
 
     @include tablet {
       margin: 0;
