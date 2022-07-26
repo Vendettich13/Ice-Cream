@@ -186,7 +186,8 @@
   color: #D41443;
   font-weight: bold;
   font-size: 18px;
-  transition: background-color 500ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: background-color 500ms cubic-bezier(0.165, 0.84, 0.44, 1),
+  transform 500ms cubic-bezier(0.165, 0.84, 0.44, 1);
   border-radius: 0 3px 3px 0;
 
   @include tablet {
@@ -218,6 +219,7 @@
 .prev:hover,
 .next:hover {
   background-color: transparent;
+  transform: scale(1.1);
 }
 
 
