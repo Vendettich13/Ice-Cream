@@ -197,13 +197,14 @@
     margin-top: -34px;
   }
 
+
   @include desktop {
     top: -200px;
     font-size: 40px;
     padding: 60px;
     margin-top: -60px;
   }
-}
+
 .slider-btn {
   border: 0;
   background-color: transparent;
@@ -253,4 +254,5 @@
   background-size: 12px;
   background-repeat: no-repeat;
   background-color: transparent;
+}
 }
