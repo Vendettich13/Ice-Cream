@@ -127,11 +127,20 @@
     margin-bottom: 8px;
   }
 
-  &__day {
+  &__day,
+  &__time {
     font-weight: 500;
     font-size: 12px;
     line-height: 1.83;
     letter-spacing: 0.04em;
+
+    @include tablet {
+      font-size: 14px;
+      line-height: 1.86;
+    }
+    @include desktop {
+      font-size: 16px;
+    }
   }
 
   &__time {
@@ -165,7 +174,7 @@
     bottom: 0;
     fill: #db0037;
     opacity: 0;
-    transition: 2500ms opacity cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: 500ms opacity cubic-bezier(0.165, 0.84, 0.44, 1);
   }
 
   &__container-btn {
