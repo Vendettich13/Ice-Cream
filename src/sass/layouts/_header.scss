@@ -29,6 +29,7 @@
 
   @media screen and (min-width: 1200px) {
     padding-top: 0px;
+    height: 125px;
   }
 
   // ----- list ul -------------
@@ -53,14 +54,16 @@
 
     color: #ffffff;
 
-    padding: 52px 0;
+    padding: 25px 0;
+
+    transition: color 500ms cubic-bezier(0.165, 0.84, 0.44, 1);
 
     &:hover,
     &:focus {
       color: #d41443;
     }
 
-    &.active {
+    &.current {
       color: #d41443;
     }
   }
@@ -90,6 +93,7 @@
 
 // BUTTON BUY
 .button-buy {
+  position: relative;
   display: inline-block;
   width: 160px;
   height: 44px;
@@ -104,22 +108,32 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
   color: #d41443;
 
   cursor: pointer;
 
+  transition: background-color 0.5s cubic-bezier(0.165, 0.84, 0.44, 1),
+    color 0.5s cubic-bezier(0.165, 0.84, 0.44, 1),
+    transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1),
+    box-shadow 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+
   &:hover,
   &:focus {
-    background-color: #ecebeb;
+    // background-color: #ecebeb;
+
+    color: #fff;
+    background-color: #d41443;
+    transform: scale(1.1);
+    box-shadow: -3px -4px 5px #7b0c2847;
   }
 
   &__img {
     height: 10px;
     margin-left: 12px;
+    fill: currentColor;
+    position: absolute;
+    top: 18px;
   }
 
   @media screen and (min-width: 1200px) {
