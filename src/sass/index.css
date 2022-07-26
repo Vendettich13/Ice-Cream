@@ -1930,22 +1930,16 @@ section {
     display: none;
   }
 }
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-.card-list__img {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 /* Next & previous buttons */
+.slider-buttons {
+  position: relative;
+}
+
 .prev,
 .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: -250px;
   width: auto;
   margin-top: -22px;
   padding: 16px;
@@ -1958,7 +1952,7 @@ section {
 @media screen and (min-width: 768px) {
   .prev,
 .next {
-    top: 30%;
+    top: -180px;
     font-size: 22px;
     padding: 30px;
     margin-top: -34px;
@@ -1967,7 +1961,7 @@ section {
 @media screen and (min-width: 1200px) {
   .prev,
 .next {
-    top: 20%;
+    top: -200px;
     font-size: 40px;
     padding: 60px;
     margin-top: -60px;
@@ -1986,12 +1980,21 @@ section {
   background-color: rgba(250, 250, 250, 0.8);
 }
 
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.card-list__img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
   height: 12px;
   width: 12px;
-  margin: 0 18px;
   background-color: #d9d9d9;
   border-radius: 50%;
   display: inline-block;
@@ -2017,15 +2020,21 @@ section {
 }
 
 .contacts__card-set {
-  grid-template-columns: 1fr 1fr 1fr;
   margin-bottom: 32px;
   background: transparent;
+}
+@media screen and (min-width: 380px) and (max-width: 767px) {
+  .contacts__card-set {
+    width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 @media screen and (min-width: 768px) {
   .contacts__card-set {
     margin-bottom: 60px;
     display: grid;
-    grid-template-columns: 3/1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 32px;
   }
 }
@@ -2034,6 +2043,11 @@ section {
   border-radius: 24px;
   padding: 40px 32px;
   background-color: #ffffff;
+}
+@media screen and (min-width: 1200px) {
+  .contacts__card {
+    padding: 40px 40px;
+  }
 }
 .contacts__card:not(:last-child) {
   margin-bottom: 20px;
@@ -2044,6 +2058,7 @@ section {
   }
 }
 .contacts__item-title {
+  padding-top: 2px;
   width: 80px;
   height: 16px;
   border-radius: 4px;
@@ -2060,7 +2075,10 @@ section {
 }
 @media screen and (min-width: 768px) {
   .contacts__item-title {
+    font-size: 16px;
+    line-height: 1.87;
     height: 28px;
+    margin-bottom: 32px;
   }
 }
 .contacts__item-title--style {
@@ -2074,23 +2092,43 @@ section {
   letter-spacing: 0.04em;
   margin-bottom: 8px;
 }
+@media screen and (min-width: 768px) {
+  .contacts__title {
+    margin-bottom: 12px;
+  }
+}
 .contacts__description {
   width: 179px;
   font-weight: 500;
   font-size: 12px;
-  line-height: 18px;
+  line-height: 1.5;
   color: #907e82;
-  margin-bottom: 24px;
+}
+@media screen and (min-width: 768px) {
+  .contacts__description {
+    width: 159px;
+    font-size: 16px;
+    line-height: 1.83;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__description {
+    width: 243px;
+  }
 }
 .contacts__line {
   width: 100%;
   height: 1px;
   background-color: #e1e1e1;
   border: 2px;
+  margin-top: 24px;
   margin-bottom: 24px;
 }
-.contacts__aside {
-  margin-bottom: 24px;
+@media screen and (min-width: 768px) {
+  .contacts__line {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
 }
 .contacts__date:first-child {
   margin-bottom: 8px;
@@ -2110,19 +2148,24 @@ section {
   font-size: 12px;
   line-height: 1.5;
   color: #907e82;
+  cursor: pointer;
+  transition: 500ms color cubic-bezier(0.165, 0.84, 0.44, 1), 500ms text-shadow cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .contacts__link:hover {
   color: #db0037;
+  text-shadow: 3px 3px 4px rgba(212, 20, 68, 0.2901960784);
 }
 .contacts__link:hover .contacts__link-icon {
   opacity: 1;
+  transition: 500ms opacity cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .contacts__link-icon {
   position: absolute;
-  left: -20px;
+  left: 130px;
   bottom: 0;
   fill: #db0037;
   opacity: 0;
+  transition: 2500ms opacity cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 @media screen and (min-width: 768px) {
   .contacts__container-btn {
@@ -2134,7 +2177,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 177px;
+  min-width: 168px;
   height: 44px;
   font-weight: 700;
   font-size: 16px;
