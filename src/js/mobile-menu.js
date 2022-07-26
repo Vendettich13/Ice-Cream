@@ -6,9 +6,9 @@
         openModalBtn: document.querySelector("[data-modal-btm-open]"),
 
         menu: document.querySelector("[data-menu]"),
-        modal: document.querySelector("[data-modal]"),
+        
 
-        body: document.querySelector("[body]"),
+        body: document.querySelector("body"),
         
         header: document.querySelector("[data-header]"),
         reviews: document.querySelector("[data-reviews]"),
@@ -29,8 +29,8 @@
     refs.contacts.addEventListener("click", toggleMenu);
 
     function toggleMenu() {
-        refs.menu.classList.toggle('is-open');
-        refs.body.classList.toggle("[no-scroll]"); 
+        refs.menu.classList.toggle('is-hidden');
+        refs.body.classList.toggle("no-scroll"); 
     }
     
     function toggleModal() {
