@@ -1,6 +1,7 @@
 .footer {
     position: relative;
     width: 100%;
+    background-color: #FFF5F6;
 
     &::after {
     text-align: center;
@@ -24,6 +25,15 @@
     }
 }
 }
+.footer-container {
+    @media screen and(min-width: 768px) {
+        padding-left: 16px;
+        padding-right: 16px; 
+    }    
+    @media screen and (min-width: 1200px) {
+        padding-top: 60px;
+    }
+}
 .footer__box {
     @media screen and (min-width: 768px) {
     display: flex;    
@@ -31,8 +41,6 @@
     align-items: flex-end;
 }
 }
-
-
 .footer__label {
     margin-bottom: 16px;
     font-family: 'Titan One';
@@ -76,7 +84,6 @@
     line-height: calc(55 / 48);
     letter-spacing: 0.06em;
 }
-
 @media screen and (min-width: 1200px) {
     margin-bottom: 67px;
 
@@ -98,13 +105,12 @@
     fill: #FEA5BB;
 
     transition: 500ms background-color cubic-bezier(0.165, 0.84, 0.44, 1),
-    500ms color cubic-bezier(0.165, 0.84, 0.44, 1);
+    500ms fill cubic-bezier(0.165, 0.84, 0.44, 1);
     &:hover,
     &:focus {
     fill: #D41443;
     }
 }
-
 .footer__tel {
     margin-bottom: 56px;
     display: flex;
