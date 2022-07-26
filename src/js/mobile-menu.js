@@ -1,28 +1,40 @@
 (() => {
-    const menuBtnRef = document.querySelector("[data-menu-button]");
-    const closeModalBtn = document.querySelector("[data-menu-button-close]");
-    const mobileMenuRef = document.querySelector("[data-menu]");
+    const refs = {
+        openMenuBtn: document.querySelector("[data-menu-button]"),
+        closeMenuBtn: document.querySelector("[data-menu-button-close]"),
 
-    menuBtnRef.addEventListener('click', () => {
-        const expanded =
-            menuBtnRef.getAttribute("aria-expanded") === "true" || false;
+        openModalBtn: document.querySelector("[data-modal-btm-open]"),
 
-        menuBtnRef.classList.toggle("is-open");
-        menuBtnRef.setAttribute("aria-expanded", !expanded);
+        menu: document.querySelector("[data-menu]"),
+        modal: document.querySelector("[data-modal]"),
 
-        mobileMenuRef.classList.toggle("is-open");
-        document.body.classList.toggle("menu-open")
-        document.body.classList.toggle("no-scroll")
-    });
+        body: document.querySelector("[body]"),
+        
+        header: document.querySelector("[data-header]"),
+        reviews: document.querySelector("[data-reviews]"),
+        howitsmade: document.querySelector("[data-howitsmade]"),
+        products: document.querySelector("[data-products]"),
+        contacts: document.querySelector("[data-contacts]"),
+    };
 
-    closeModalBtn.addEventListener('click' , () => {
-        const expanded =
-            menuBtnRef.getAttribute("aria-expanded") === "true" || false;
+    refs.openMenuBtn.addEventListener("click", toggleMenu);
+    refs.closeMenuBtn.addEventListener("click", toggleMenu);
 
-        menuBtnRef.classList.toggle("is-open");
-        menuBtnRef.setAttribute("aria-expanded", !expanded);
+    refs.openModalBtn.addEventListener("click", toggleMenu,toggleModal);
 
-        mobileMenuRef.classList.toggle("is-open");
-        document.body.classList.toggle("no-scroll")
-    });
+    refs.header.addEventListener("click", toggleMenu);
+    refs.reviews.addEventListener("click", toggleMenu);
+    refs.howitsmade.addEventListener("click", toggleMenu);
+    refs.products.addEventListener("click", toggleMenu);
+    refs.contacts.addEventListener("click", toggleMenu);
+
+    function toggleMenu() {
+        refs.menu.classList.toggle('is-open');
+        refs.body.classList.toggle("[no-scroll]"); 
+    }
+    
+    function toggleModal() {
+        refs.modal.classList.toggle('is-open');
+    }
+
 })();
