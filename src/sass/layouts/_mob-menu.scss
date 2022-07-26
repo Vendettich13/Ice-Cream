@@ -20,6 +20,11 @@
     }
 }
 
+.mob-menu__icon-close {
+    display: inline-flex;
+    height: 14px;
+}
+
 .mob-menu__overlay {
     position: fixed;
     top: 0;
@@ -46,22 +51,29 @@
         margin-top: 20px;
         margin-left: auto;
         margin-right: 20px;
+        width: 14px;
+        height: 14px;
     }
 
     .mob-menu__button-buy.button-buy {
-        display: flex;
-        margin: auto;
+
         margin-top: 26px;
         margin-bottom: 0;
-    
-        padding: auto;
-    
-        // }
+
+        padding: 0;
+
         width: 210px;
     
         fill: $first-title-color;
-        .button-buy__img {
-            margin-left: 25px;
+
+        &:hover,
+        &:focus {
+          // background-color: #ecebeb;
+      
+          color: #fff;
+          background-color: #d41443;
+          transform: scale(1.1);
+          box-shadow: -3px -4px 5px #7b0c2847;
         }
     }
     
