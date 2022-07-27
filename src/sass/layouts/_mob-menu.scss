@@ -1,8 +1,8 @@
 .mob-menu {
-  z-index: 100;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
+  z-index: 100;
   flex-direction: column;
 
   width: 250px;
@@ -18,8 +18,8 @@
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
-    transform: translateX(100%);
     transition: 500ms;
+    transform: translateX(100%);
   }
 
   &__list {
@@ -48,10 +48,6 @@
       color: $first-title-color;
     }
   }
-}
-
-.body {
-  position: relative;
 }
 
 .current-link.mob-menu__link {
