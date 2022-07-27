@@ -23,9 +23,9 @@
 
 .hero__title {
   position: absolute;
-  top: 50%;
+
   z-index: 3;
-  transform: translateY(-50%);
+  bottom: 202px;
   width: 218px;
 
   font-family: 'Titan One';
@@ -82,7 +82,7 @@
 
 .hero__btn-section {
   position: absolute;
-  z-index: 3;
+  z-index: 100;
   display: flex;
   gap: 8px;
   bottom: 158px;
@@ -97,29 +97,29 @@
 }
 
 // ---------------- BUTTON ----------------
-.btn {
-  height: 24px;
+// .btn {
+//   height: 24px;
 
-  padding: 0 15px;
-  font-family: 'DM Sans';
+//   padding: 0 15px;
+//   font-family: 'DM Sans';
 
-  font-weight: 400;
-  font-size: 8px;
-  line-height: 10px;
-  display: flex;
-  align-items: center;
-  border-radius: 20px;
+//   font-weight: 400;
+//   font-size: 8px;
+//   line-height: 10px;
+//   display: flex;
+//   align-items: center;
+//   border-radius: 20px;
 
-  color: #d41443;
+//   color: #d41443;
 
-  background-color: #ffffff;
+//   background-color: #ffffff;
 
-  &:hover,
-  &:focus {
-    background-color: #ecebeb;
-    color: #d41443;
-  }
-}
+//   &:hover,
+//   &:focus {
+//     background-color: #ecebeb;
+//     color: #d41443;
+//   }
+// }
 
 // .hero__btn--red {
 //   color: #ffffff;
@@ -146,8 +146,8 @@
 }
 
 .hero__button--pr {
-  min-width: 62px;
-  height: 40px;
+  width: 62px;
+  height: 24px;
   color: #ffffff;
   background-color: #d41443;
 
@@ -169,14 +169,11 @@
     font-size: 14px;
     line-height: 18px;
   }
-  @media screen and (max-width: 787px) {
-    display: none;
-  }
 }
 
 .hero__button--hw {
-  min-width: 83px;
-  height: 40px;
+  min-width: 82px;
+  height: 24px;
   color: #d41443;
 
   background-color: #ffffff;
@@ -197,10 +194,6 @@
 
     font-size: 14px;
     line-height: 18px;
-  }
-
-  @media screen and (max-width: 787px) {
-    display: none;
   }
 }
 
@@ -253,6 +246,10 @@
   height: 344px;
   background-color: #ffa5ba;
   border-radius: 50%;
+
+  @media screen and (min-width: 468px) {
+    right: 20px;
+  }
 
   @media screen and (min-width: 768px) {
     right: 185px;
@@ -446,7 +443,7 @@
   position: absolute;
   width: 115px;
   left: 184px;
-  bottom: 81px;
+  bottom: 56px;
 
   font-family: 'DM Sans';
   font-size: 8px;
@@ -456,7 +453,7 @@
 
   @media screen and (min-width: 1200px) {
     left: 265px;
-    bottom: 130px;
+    bottom: 86px;
     width: 200px;
     font-size: 14px;
     line-height: 140%;
