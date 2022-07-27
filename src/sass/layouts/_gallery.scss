@@ -109,3 +109,13 @@
     padding-bottom: 79px;
   }
 }
+
+.grid--single-small {
+  display: flex;
+  align-items: center;
+}
+
+.grid--opacity {
+  display: block;
+  opacity: 0;
+}
