@@ -103,8 +103,8 @@
   }
 
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
+  background-size: contain;
 
   @media screen and (max-width: 767px) {
     background-image: url(../images/about/about-2-1x.webp);
@@ -115,6 +115,7 @@
   @include desktop {
     width: 463px;
     padding-top: 90px;
+    background-size: cover;
   }
 
   &__pre-text {
