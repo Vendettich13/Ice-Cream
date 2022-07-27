@@ -181,8 +181,8 @@
     position: absolute;
     top: -250px;
     width: auto;
-    margin-top: -22px;
-    padding: 16px;
+    margin-top: -43px;
+    padding: 45px;
     color: #d41443;
     font-weight: bold;
     font-size: 18px;
@@ -194,15 +194,15 @@
   @include tablet {
     top: -180px;
       font-size: 22px;
-      padding: 30px;
-      margin-top: -34px;
+      padding: 60px;
+      margin-top: -64px;
   }
 
   @include desktop {
     top: -200px;
-      font-size: 40px;
-      padding: 60px;
-      margin-top: -60px;
+    font-size: 40px;
+    padding: 150px;
+    margin-top: -150px;
   }
 }
 
@@ -256,3 +256,33 @@
   background-repeat: no-repeat;
   background-color: transparent;
 }
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  animation-name: fade;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+;
