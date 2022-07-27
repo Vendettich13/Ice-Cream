@@ -247,6 +247,10 @@
   background-color: #ffa5ba;
   border-radius: 50%;
 
+  @media screen and (min-width: 468px) {
+    right: 20px;
+  }
+
   @media screen and (min-width: 768px) {
     right: 185px;
     bottom: 40px;
@@ -439,7 +443,7 @@
   position: absolute;
   width: 115px;
   left: 184px;
-  bottom: 81px;
+  bottom: 56px;
 
   font-family: 'DM Sans';
   font-size: 8px;
