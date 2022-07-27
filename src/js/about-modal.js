@@ -10,6 +10,5 @@
 
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
-    refs.btn.classList.removeClass('active');
   }
 })();

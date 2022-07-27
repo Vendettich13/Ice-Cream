@@ -38,16 +38,17 @@
     text-transform: uppercase;
     color: #d41443;
     margin: 15px 0 140px;
+
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       font-size: 48px;
       line-height: 1.15;
-      margin: 18px 0 20px;
+      margin: 18px 0 166px;
     }
     @media screen and (min-width: 1200px) {
       font-size: 58px;
       line-height: 1.14;
       letter-spacing: 0.06em;
-      margin: 16px 0 20px;
+      margin: 16px 0 290px;
     }
   }
 
@@ -73,12 +74,12 @@
     text-align: center;
     padding: 160px 40px 40px;
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-      margin-top: 138px;
-      padding: 118px 0 40px;
+      padding: 118px 32px 32px;
+      width: 224px;
     }
     @media screen and (min-width: 1200px) {
-      padding: 165px 0 60px;
-      margin-top: 261px;
+      padding: 170px 65px 55px;
+      width: 368px;
     }
 
     &--pink {
@@ -257,12 +258,10 @@
       line-height: 1.79;
       letter-spacing: 0.04em;
       color: #ffffff;
-      padding: 0 32px;
     }
     @media screen and (min-width: 1200px) {
       font-size: 16px;
       line-height: 1.75;
-      padding: 0 63px;
       margin: 32px 0 60px;
     }
   }

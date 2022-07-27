@@ -81,7 +81,9 @@
 
     &__picture {
       display: block;
-      margin-bottom: 40px;
+      @media screen and (max-width: 767px) {
+        margin-bottom: 40px;
+      }
 
       @include tablet {
         width: 336px;
