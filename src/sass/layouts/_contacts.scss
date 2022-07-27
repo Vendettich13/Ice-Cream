@@ -8,24 +8,38 @@
   );
   padding-top: 0;
   padding-bottom: 40px;
+  @include tablet {
+    padding-bottom: 60px;
+  }
 }
 .contacts {
   &__card-set {
-    grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 32px;
     background: transparent;
+
+    @media screen and (min-width: 380px) and (max-width: 767px) {
+      width: 340px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
     @include tablet {
       margin-bottom: 60px;
       display: grid;
-      grid-template-columns: 3 / 1fr;
+      grid-template-columns: repeat(3, 1fr);
       gap: 32px;
     }
   }
+
   &__card {
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
     padding: 40px 32px;
     background-color: $second-text-color;
+
+    @include desktop {
+      padding: 40px 40px;
+    }
 
     &:not(:last-child) {
       margin-bottom: 20px;
@@ -36,6 +50,7 @@
   }
 
   &__item-title {
+    padding-top: 2px;
     width: 80px;
     height: 16px;
     border-radius: 4px;
@@ -52,8 +67,12 @@
     justify-content: center;
 
     margin-bottom: 20px;
+
     @include tablet {
+      font-size: 16px;
+      line-height: 1.87;
       height: 28px;
+      margin-bottom: 32px;
     }
 
     &--style {
@@ -69,6 +88,10 @@
     letter-spacing: 0.04em;
 
     margin-bottom: 8px;
+
+    @include tablet {
+      margin-bottom: 12px;
+    }
   }
 
   &__description {
@@ -76,10 +99,17 @@
 
     font-weight: 500;
     font-size: 12px;
-    line-height: 18px;
+    line-height: 1.5;
     color: #907e82;
 
-    margin-bottom: 24px;
+    @include tablet {
+      width: 159px;
+      font-size: 16px;
+      line-height: 1.83;
+    }
+    @include desktop {
+      width: 243px;
+    }
   }
 
   &__line {
@@ -87,22 +117,33 @@
     height: 1px;
     background-color: #e1e1e1;
     border: 2px;
+    margin-top: 24px;
     margin-bottom: 24px;
-  }
 
-  &__aside {
-    margin-bottom: 24px;
+    @include tablet {
+      margin-top: 32px;
+      margin-bottom: 32px;
+    }
   }
 
   &__date:first-child {
     margin-bottom: 8px;
   }
 
-  &__day {
+  &__day,
+  &__time {
     font-weight: 500;
     font-size: 12px;
     line-height: 1.83;
     letter-spacing: 0.04em;
+
+    @include tablet {
+      font-size: 14px;
+      line-height: 1.86;
+    }
+    @include desktop {
+      font-size: 16px;
+    }
   }
 
   &__time {
@@ -116,21 +157,27 @@
     line-height: 1.5;
 
     color: #907e82;
+    cursor: pointer;
+    transition: 500ms color cubic-bezier(0.165, 0.84, 0.44, 1),
+      500ms text-shadow cubic-bezier(0.165, 0.84, 0.44, 1);
   }
 
   &__link:hover {
     color: #db0037;
+    text-shadow: 3px 3px 4px #d414444a;
   }
 
   &__link:hover .contacts__link-icon {
     opacity: 1;
+    transition: 500ms opacity cubic-bezier(0.165, 0.84, 0.44, 1);
   }
   &__link-icon {
     position: absolute;
-    left: -20px;
+    left: 130px;
     bottom: 0;
     fill: #db0037;
     opacity: 0;
+    transition: 500ms opacity cubic-bezier(0.165, 0.84, 0.44, 1);
   }
 
   &__container-btn {
@@ -145,7 +192,7 @@
     align-items: center;
     justify-content: center;
 
-    min-width: 177px;
+    min-width: 168px;
     height: 44px;
 
     font-weight: 700;
@@ -160,7 +207,8 @@
     padding: 0;
     cursor: pointer;
     transition: 500ms background-color cubic-bezier(0.165, 0.84, 0.44, 1),
-      500ms color cubic-bezier(0.165, 0.84, 0.44, 1);
+      500ms color cubic-bezier(0.165, 0.84, 0.44, 1),
+      transform 500ms cubic-bezier(0.165, 0.84, 0.44, 1);
 
     @include tablet {
       margin: 0;

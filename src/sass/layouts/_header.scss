@@ -78,17 +78,25 @@
 
   padding: 0;
 
-  background: transparent;
+  background-color: transparent;
   border: none;
+  cursor: pointer;
+
+  transition: transform 500ms cubic-bezier(0.165, 0.84, 0.44, 1);
 
   @media screen and (min-width: 1200px) {
     display: none;
   }
-}
 
-.burger-button__svg {
-  width: 20px;
-  height: 14px;
+  &__svg {
+    width: 20px;
+    height: 14px;
+
+    .burger-button:hover &,
+    .burger-button:focus & {
+      transform: scale(1.1);
+    }
+  }
 }
 
 // BUTTON BUY
@@ -120,8 +128,6 @@
 
   &:hover,
   &:focus {
-    // background-color: #ecebeb;
-
     color: #fff;
     background-color: #d41443;
     transform: scale(1.1);
