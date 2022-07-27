@@ -217,7 +217,7 @@
     }
   }
 
-  &__button {
+  &__button--last {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -240,22 +240,42 @@
       500ms color cubic-bezier(0.165, 0.84, 0.44, 1),
       transform 500ms cubic-bezier(0.165, 0.84, 0.44, 1);
 
-    &:first-child {
-      color: $second-text-color;
-      background-color: $first-title-color;
-    }
-
-    &:first-child:hover {
-      color: $second-text-color;
-      background-color: #db0037;
+    &:hover,
+    &:focus {
+      color: $first-title-color;
+      background-color: $second-text-color;
       transform: scale(1.1);
       box-shadow: -3px -4px 5px #7b0c2847;
     }
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 168px;
+    height: 44px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(21 / 16);
+
+    color: $second-text-color;
+    border-radius: 22px;
+    background-color: $first-title-color;
+
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: 500ms background-color cubic-bezier(0.165, 0.84, 0.44, 1),
+      500ms color cubic-bezier(0.165, 0.84, 0.44, 1),
+      transform 500ms cubic-bezier(0.165, 0.84, 0.44, 1);
 
     &:hover,
     &:focus {
-      color: $second-text-color;
-      background-color: $first-title-color;
+      color: $first-title-color;
+      background-color: $second-text-color;
       transform: scale(1.1);
       box-shadow: -3px -4px 5px #7b0c2847;
     }
@@ -266,16 +286,20 @@
     fill: $second-text-color;
     transition: 500ms fill cubic-bezier(0.165, 0.84, 0.44, 1);
   }
+  .contacts__button:hover .arrow-button,
+  .contacts__button:focus .arrow-button {
+    fill: $first-title-color;
+  }
 
   .arrow-btn-addition {
     margin-left: 13px;
     fill: $first-title-color;
     transition: 500ms fill cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
 
-    .contacts__button:hover &,
-    .contacts__button:focus & {
-      fill: $second-text-color;
-    }
+  .contacts__button:hover .arrow-btn-addition,
+  .contacts__button:focus .arrow-btn-addition {
+    fill: $second-text-color;
   }
 }
 
