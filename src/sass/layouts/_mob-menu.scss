@@ -20,6 +20,9 @@
     visibility: hidden;
     transform: translateX(100%);
     transition: 500ms;
+    position: fixed;
+    top: 0;
+    right: 0;
   }
 
   &__list {
