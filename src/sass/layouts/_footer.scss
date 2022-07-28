@@ -35,21 +35,21 @@
   }
 }
 .footer__box {
+  margin-bottom: 56px;
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
   }
-  
 }
 .footer__title-box {
-    margin-bottom: 40px;
-    @media screen and (min-width: 768px) {
-        margin-bottom: 48px;
-    }
-    @media screen and (min-width: 1200px) {
+  margin-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 48px;
+  }
+  @media screen and (min-width: 1200px) {
     margin-bottom: 67px;
-    }
+  }
 }
 .footer__label {
   margin-bottom: 16px;
@@ -98,10 +98,9 @@
   }
 }
 .footer__connect {
-   margin-bottom: 56px;
-   @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     margin-bottom: 67px;
-   }
+  }
 }
 .socials {
   display: flex;
