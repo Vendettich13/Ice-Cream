@@ -107,6 +107,7 @@
   height: 44px;
 
   margin-left: 32px;
+  padding: 0;
 
   background-color: #ffffff;
 
@@ -131,7 +132,7 @@
     color: #fff;
     background-color: #d41443;
     transform: scale(1.1);
-    box-shadow: w;
+    box-shadow: -3px -4px 5px #7b0c2847;
   }
 
   &__img {
