@@ -14,7 +14,7 @@
 }
 .hero-btns__link-sec {
   transition: color 500ms cubic-bezier(0.165, 0.84, 0.44, 1);
-  color: $first-text-color;
+  color: $first-title-color;
   .hero-btns:hover &,
   .hero-btns:hover & {
     color: $second-text-color;
