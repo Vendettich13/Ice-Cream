@@ -1,8 +1,8 @@
 {
-  "name": "filmoteka",
+  "name": "icecream",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://Vendettich13.github.io/Filmoteka",
+  "homepage": "https://Vendettich13.github.io/Ice-Cream",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /web-hunters-project/"
