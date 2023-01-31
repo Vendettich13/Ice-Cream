@@ -5,17 +5,17 @@
   "homepage": "https://Vendettich13.github.io/Ice-Cream",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /web-hunters-project/"
+    "build": "parcel build src/*.html --public-url /Ice-Cream/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Vendettich13/web-hunters-project.git"
+    "url": "git+https://github.com/Vendettich13/Ice-Cream.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Vendettich13/web-hunters-project/issues"
+    "url": "https://github.com/Vendettich13/Ice-Cream/issues"
   },
   "dependencies": {
     "modern-normalize": "^1.1.0"

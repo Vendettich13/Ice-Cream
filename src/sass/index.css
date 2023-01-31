@@ -66,6 +66,10 @@ html {
      tab-size: 4;
 }
 
+html {
+  line-height: 1.15;
+}
+
 body {
   margin: 0;
 }
@@ -138,6 +142,13 @@ select {
   text-transform: none;
 }
 
+[type=button],
+[type=reset],
+[type=submit],
+button {
+  -webkit-appearance: button;
+}
+
 ::-moz-focus-inner {
   border-style: none;
   padding: 0;
@@ -165,6 +176,7 @@ progress {
 }
 
 [type=search] {
+  -webkit-appearance: textfield;
   outline-offset: -2px;
 }
 
@@ -2886,7 +2898,7 @@ section {
 @media screen and (min-width: 1200px) {
   .footer__title {
     max-width: 100%;
-    font-size: 58px;
+    ont-size: 58px;
     line-height: 1.14;
   }
 }
